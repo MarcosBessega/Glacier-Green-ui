@@ -1,15 +1,15 @@
 {
-  "name": "glacier-dark-ui",
+  "name": "Glacier-Green-ui",
   "theme": "ui",
-  "version": "0.3.0",
-  "description": "Atom Glacier dark UI theme",
+  "version": "0.1.0",
+  "description": "Greenish version of Glacier Dark Theme",
   "keywords": [
     "dark",
-    "adaptive",
+    "green",
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/berlouz/glacier-dark-ui",
+  "repository": "https://github.com/MarcosBessega/Wrath-of-Nature-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
@@ -20,7 +20,7 @@
   "configSchema": {
     "fontSize": {
       "title": "Font Size",
-      "description": "Change the UI font size. Needs to be between 8 and 20.",
+      "description": "Atom UI forked for @berlouz glacier-dark-ui (https://atom.io/themes/glacier-dark-ui)",
       "type": [
         "integer",
         "string"

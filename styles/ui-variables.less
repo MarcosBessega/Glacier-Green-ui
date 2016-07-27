@@ -34,7 +34,7 @@
 
 // Main colors -----------------
 @ui-fg:     hsl(@ui-hue, min(@ui-saturation, 18%), max(@ui-lightness*3, 88%) );
-@ui-bg:     #0e151b; // normalized @syntax-background-color
+@ui-bg:     #021c1e; // normalized @syntax-background-color
 @ui-border: hsl(@ui-hue, @ui-saturation, @ui-lightness-border);
 
 
@@ -53,10 +53,10 @@
 @text-color-highlight:  lighten(@text-color, 20%);
 @text-color-selected:   white;
 
-@text-color-info:    #3cadd7;
-@text-color-success: #5eebb8;
-@text-color-warning: #ffe792;
-@text-color-error:   #d7503c;
+@text-color-info:    #007896;
+@text-color-success: #00967d;
+@text-color-warning: #c0f17d;
+@text-color-error:   #963232;
 
 
 // Background -----------------
@@ -65,8 +65,8 @@
 @background-color-warning: #d7503c;
 @background-color-error:   #9f3a2c;
 
-@background-color-highlight: lighten(@base-background-color, 4%);
-@background-color-selected:  lighten(@base-background-color, 8%);
+@background-color-highlight: lighten(@base-background-color, 2%);
+@background-color-selected:  lighten(@base-background-color, 4%);
 
 @app-background-color: @level-3-color;
 
@@ -80,14 +80,14 @@
 @pane-item-background-color:       @base-background-color;
 @pane-item-border-color:           @base-border-color;
 
-@input-background-color:           darken(@base-background-color, 6%);
+@input-background-color:           darken(@base-background-color, 18%);
 @input-border-color:               @base-border-color;
 
 @tool-panel-background-color:      @level-3-color;
 @tool-panel-border-color:          @base-border-color;
 
-@inset-panel-background-color:     lighten(@level-2-color, 4%);
-@inset-panel-border-color:         fadeout(@base-border-color, 15%);
+@inset-panel-background-color:     lighten(@level-2-color, 8%);
+@inset-panel-border-color:         fadeout(@base-border-color, 20%);
 
 @panel-heading-background-color:   @level-2-color;
 @panel-heading-border-color:       @base-border-color;
@@ -141,7 +141,7 @@
 // These variables are only used in this theme
 // ----------------------------------------------
 
-@ui-theme-name: glacier-ui;
+@ui-theme-name: glacier-green-ui;
 
 // Text (Custom) -----------------
 @text-color-faded: fade(@text-color, 20%);
@@ -154,25 +154,25 @@
 
 
 // Background (Custom) -----------------
-@level-1-color: lighten(@base-background-color, 6%);
+@level-1-color: #004445;
 @level-2-color: @base-background-color;
-@level-3-color: #0b1015;
+@level-3-color: #011012;
 
 
 // Base -----------------
-@base-accent-color: #5eebb8; //76FFCD ou 4ae3bc
+@base-accent-color: #6FB98F;
 
 
 // Components (Custom) -----------------
 @badge-background-color:            lighten(@background-color-highlight, 6%);
 
-@button-text-color-selected:        contrast(@button-background-color-selected, white, hsl(@ui-hue,100%,10%), 40% );
+@button-text-color-selected:        contrast(@button-background-color-selected, black, hsl(@ui-hue,100%,10%), 40% );
 @button-border-color-selected:      @base-border-color;
 
-@checkbox-background-color:         fade(@base-accent-color, 33%);
+@checkbox-background-color:         fade(@base-accent-color, 15%);
 
-@input-background-color-focus:      fadein(@input-background-color, 6%);
-@input-selection-color:             darken(@background-color-selected, 6%);
+@input-background-color-focus:      fadein(@input-background-color, 15%);
+@input-selection-color:             darken(@background-color-selected, 15%);
 @input-selection-color-focus:       @background-color-selected;
 
 @key-binding-border-color:          hsla(0,0%,100%,.1);
@@ -184,7 +184,7 @@
 
 @scrollbar-color:                   @level-1-color;
 @scrollbar-background-color:        @level-3-color; // replaced `transparent` with a solid color to test https://github.com/atom/one-light-ui/issues/4
-@scrollbar-color-editor:            contrast(@ui-syntax-color, darken(@ui-syntax-color, 18%), lighten(@ui-syntax-color, 9%) );
+@scrollbar-color-editor:            contrast(@ui-syntax-color, darken(@ui-syntax-color, 24%), lighten(@ui-syntax-color, 12%) );
 @scrollbar-background-color-editor: @ui-syntax-color;
 
 
@@ -216,17 +216,7 @@
 // These variables are used to override packages
 // ----------------------------------------------
 
-@settings-list-background-color: darken(@level-2-color, 1.5%);
+@settings-list-background-color: darken(@level-2-color, 4%);
 @theme-config-box-shadow: inset 0 0 3px hsla(0, 0%, 100%, .4), 0 1px 3px hsla(0, 0%, 0%, .2);
 @theme-config-box-shadow-selected: inset 0 1px 3px hsla(0, 0%, 0%, .1);
 @theme-config-border-selected: hsla(0, 0%, 100%, .75);
-
-
-
-// Debug
-// Output variables to the top of the UI
-// -------------------------------------
-
-// html:before {
-//   content: "@{variable}";
-// }
