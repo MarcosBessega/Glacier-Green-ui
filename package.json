@@ -9,7 +9,7 @@
     "ui"
   ],
   "license": "MIT",
-  "repository": "git@github.com:MarcosBessega/Glacier-Green-ui.git",
+  "repository": "https://github.com/MarcosBessega/Glacier-Green-ui.git",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
